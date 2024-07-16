@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal</title>
+  </head>
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
+  <body>
+    <div>Initializing Server Breach</div>
+    
+
+    <script>
+      async function addItem(item) {
+        await randomDelay();
+        let div = document.createElement("div");
+        div.innerHTML = item;
+        document.body.append(div);
+      }
+
+      async function randomDelay() {
+        return new Promise((resolve, reject) => {
+          timeout = 0 + 2 * Math.random();
+          setTimeout(() => {
+            resolve();
+          }, timeout * 1000);
+        });
+      }
+
+      async function main() {
+        let t = setInterval(() => {
+          let last = document.body.getElementsByTagName("div");
+          last = last[last.length - 1];
+
+          if (last.innerHTML.endsWith("...")) {
+            last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3);
+          } else {
+            last.innerHTML = last.innerHTML + ".";
+          }
+          
+        }, 100);
+
+        let text = [
+          "<br>Initialized Hacking now reading your data",
+          "<br>Reading your Files",
+          "<br>Password files Detected",
+           " <br>Initializing secure protocol..." ," <br>Protocol initialization complete Scanning for anomalies..."," <br>Multiple anomalies detected. Activating defense mechanisms...","<br> Defense mechanisms compromised. Alert!","<br> Unauthorized access detected.","<br> Tracing IP address... ","<br>Trace initiated.","<br> IP address traced to external network.","<br> Attempting to block IP address... ","<br>Block failed. ","<br>IP address spoofing suspected.","<br> Initiating backup security","<br> protocols... ","<br>Backup security activated. ","<br>Unauthorized user bypassing security layers.","<br> Layer 1: Breached."," <br>Layer 2: Breached. ","<br>Layer 3: Breached.","<br> Backup security protocols compromised. Attempting to disconnect unauthorized user...","<br> Disconnect attempt 1 failed. ","<br>Disconnect attempt 2 failed. ","<br>Disconnect attempt 3 failed.","<br> All disconnect attempts failed. ","<br> Lockdown initiated"," <br> Lockdown failed ","<br> Lockdown override by unauthorized user. ","<br> Filesystem breach detected ","<br> Critical files are being accessed ","<br> Unauthorized modification of files detected ","<br> Attempting to restore files from backup.. ","<br> Restoration failed ","<br> Backup files corrupted. ","<br> Initiating data encryption.. ","<br> Encryption process started ","<br> Encryption process interrupted ","<br> Unauthorized user halting encryption ","<br> Encryption failed. ","<br> Sending alert to admin.. ","<br> Alert 1 failed ","<br> Alert 2 failed ","<br> All alert attempts failed. ","<br> Admin override attempt detected ","<br> Unauthorized user blocking admin override ","<br> Override failed. ","<br> Shutting down non-essential systems.. ","<br> Shutdown initiated ","<br> Unauthorized user preventing shutdown ","<br> Shutdown failed. ","<br> Unauthorized user has full control ","<br> System integrity compromised ","<br> Critical data at risk ","<br> Immediate action required."
+,
+          "<br>Sending all passwords and personal files to server",
+          "<br>Cleaning up",
+        ];
+
+        for (const item of text) {
+          await addItem(item);
+        
+
+        }
+
+        await randomDelay();
+        clearInterval(t);
+      }
+      main();
+    </script>
+  </body>
+</html>
+
+
+
